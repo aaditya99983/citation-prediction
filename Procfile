@@ -1,0 +1,1 @@
+api: GPU_FRACTION=0.22 CORPUS_PATH=<> NODE_PROXY= ANN_MODEL_PATH=<> MODEL_PATH=<> PYTHONUNBUFFERED=1 PYTHONPATH=../../ gunicorn -b 0.0.0.0:5000 --log-level=INFO -w 1 -t 900 -k sync citeomatic.gunicorn:app
